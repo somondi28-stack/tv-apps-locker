@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TV App Locker</string>
+    <string name="accessibility_service_description">Monitors app launches to enforce curfew between 10:00 PM and 7:00 AM.</string>
+</resources>

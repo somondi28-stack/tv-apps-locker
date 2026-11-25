@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TV App Locker - Curfew Settings (10:00 PM - 7:00 AM)"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select apps to lock during curfew hours:"
+        android:textColor="#AAAAAA"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp" />
+
+    <CheckBox
+        android:id="@+id/cbYoutube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YouTube (Mobile / Standard)"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:focusable="true"
+        android:layout_marginBottom="8dp" />
+
+    <CheckBox
+        android:id="@+id/cbYoutubeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YouTube for Android TV"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:focusable="true"
+        android:layout_marginBottom="8dp" />
+
+    <CheckBox
+        android:id="@+id/cbNetflix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Netflix"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:focusable="true"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change PIN (4 digits):"
+        android:textColor="#AAAAAA"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etNewPin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="New PIN"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#777777"
+        android:background="#2C2C2C"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAccessibility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Accessibility Permission"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Settings" />
+
+    </LinearLayout>
+
+</LinearLayout>
